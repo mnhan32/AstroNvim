@@ -1,7 +1,6 @@
 # Project gitignore
 .luarc.json
-#after
-!after/**
+after
 coc-settings.json
 colors
 docs
@@ -12,6 +11,9 @@ neoconf.json
 plugin
 queries
 spell
+!after
+!after/**
+
 
 # Global gitignore
 # ----------------
