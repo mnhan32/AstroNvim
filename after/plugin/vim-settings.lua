@@ -2,7 +2,8 @@
 -- enable local config
 vim.o.exrc = true
 -- setup teminal shell, usd zsh other than default bash
-vim.o.shell = "/bin/zsh"
+local zsh = "/bin/zsh"
+if io.open(zsh, "r") then vim.o.shell = "/bin/zsh" end
 
 -- keymap
 -- escape terminal and switch windows in terminal mode
